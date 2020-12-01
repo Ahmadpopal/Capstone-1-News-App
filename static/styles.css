@@ -1,0 +1,20 @@
+/* BASE */
+.my-flash-div {
+  position: relative;
+  top: 30px;
+}
+
+.my-container {
+  border: 1px solid black;
+  position: relative;
+  top: 50px;
+}
+
+/* Region  */
+.category {
+  margin-top: 60px;
+  position: sticky;
+  top: 60px;
+  z-index: 3;
+  background-color: white;
+}

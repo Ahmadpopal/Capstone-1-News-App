@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+<!-- ---- Page Title ------ -->
+
+{% block title %}Tech Crunch News {% endblock %}
+
+<!-- ---- Page Body ---- -->
+
+{% block content %}
+<!-- -------- web body Here --------- -->
+<div class="container my-container">
+<h1>Tech Crunch News </h1>
+<hr class="w-75">
+<div class="row m-auto">
+{% for article in data['articles']%}
+<div class="col-md-5 m-4">
+    <h4>{{article['title']}}</h4>
+    <img src="{{article['urlToImage']}}" class="img-fluid m-auto" alt="">
+    <p>{{article['description']}}</p> 
+    <p>{{article["content"]}}</p>
+    <p>Source : <a href="{{article['url']}}">{{article["source"]["name"]}}</a></p>
+    <p>Posted : {{article["publishedAt"]}}</p>
+    <hr>
+</div>
+{% endfor %}
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,27 @@
+  
+{% extends "base.html" %}
+
+<!-- ---- Page Title ------ -->
+
+{% block title %}Search Title Page{% endblock %}
+
+<!-- ---- Page Body ---- -->
+
+{% block content %}
+{% for cat in cat_news["articles"]%}
+<div class="row">
+<div class="card col-md-8 mb-3 mx-auto" style="margin-top: 60px;">
+<img src="{{cat['urlToImage']}}" class="card-img-top" alt="...">
+<div class="card-body">
+    <h5 class="card-title">{{cat["title"]}}</h5>
+    <p class="card-text">{{cat['description']}} {{cat["content"]}}</p>
+    <p class="card-text">Source : <a href="{{cat['url']}}">{{cat["source"]["name"]}}</a></p>
+    <p class="card-text"><small class="text-muted">Posted : {{cat["publishedAt"]}}</small></p>
+</div>
+</div>
+</div>
+{% endfor %}
+{% endblock %}
+
+
+

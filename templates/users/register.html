@@ -1,0 +1,31 @@
+  
+{% extends "base.html" %}
+
+<!-- ---- Page Title ------ -->
+
+{% block title %}Index{% endblock %}
+
+<!-- ---- Page Body ---- -->
+
+{% block content %}
+<!-- -------- web body Here --------- -->
+<form method="POST" style="margin-top: 60px;">
+  <div class="row">
+    <div class="form-group col-md-6 m-3 border mx-auto shadow p-3 mb-5 bg-white rounded">
+      <h3 class="h3 m-4">Create New Account</h3>
+      <hr>
+    {{form.hidden_tag()}}
+    <!-- -- -->
+    {% for field in form if field.widget.input_type != 'hidden' %}
+    <label class="ml-4 mt-2" for="">{{field.label}}</label> {{field (class_="form-control col-8 ml-4")}} 
+      <!-- --- -->
+      {% for error in field.errors %}
+      <span class="alert alert-danger">{{error}} </span>{%endfor%}
+    {% endfor%}
+  
+    <button class="btn btn-success m-4" type="submit">Create Account</button>
+  </div>
+  </div>
+  </form>
+{% endblock %}
+  
