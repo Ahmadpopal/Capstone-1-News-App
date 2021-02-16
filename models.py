@@ -6,6 +6,7 @@ db = SQLAlchemy()
 bcrypt = Bcrypt()
 
 
+# USER MODULE
 class User(db.Model):
 
     __tablename__ = "users"
@@ -21,6 +22,8 @@ class User(db.Model):
     email = db.Column(db.Text, nullable=False)
     password = db.Column(db.Text, nullable=False)
 
+    # REGISTER USERS
+
     @classmethod
     def register(cls, username, firstname, lastname, dateofbirth, email, password):
         """ Register User with hashed password and return user"""
@@ -29,6 +32,8 @@ class User(db.Model):
         hashed_utf8 = hashed.decode("utf8")
 
         return cls(username=username, firstname=firstname, lastname=lastname, dateofbirth=dateofbirth, email=email, password=hashed_utf8)
+
+    # AUTH USERS
 
     @classmethod
     def authenticate(cls, username, password):
@@ -43,6 +48,7 @@ class User(db.Model):
             return False
 
 
+# CONNECT DATABASE
 def connect_db(app):
     db.app = app
     db.init_app(app)

@@ -11,23 +11,23 @@
 <!-- -------- web body Here --------- -->
 <div class="category ml-1">
     <div class="row">
-      <div class="col"><a href="/category/eg/entertainment">Entertainment</a></div>
-      <div class="col"><a href="/category/eg/general">General</a></div>
-      <div class="col"><a href="/category/eg/health">Health</a></div>
-      <div class="col"><a href="/category/eg/science">Science</a></div>
-      <div class="col"><a href="/category/eg/sports">Sports</a></div>
-      <div class="col"><a href="/category/eg/Technology">Technology</a></div> 
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/entertainment">Entertainment</a></div>
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/general">General</a></div>
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/health">Health</a></div>
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/science">Science</a></div>
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/sports">Sports</a></div>
+      <div class="col"><a class="category-attributes category-text" href="/category/eg/Technology">Technology</a></div> 
     </div>
   </div>
 <hr class="w-75">
 {% for article in news['articles']%}
   <div class="card col-md-8 mb-3 mx-auto">
-    <img src="{{article['urlToImage']}}" class="card-img-top" alt="...">
+    <img src="{{article['urlToImage']}}" class="card-img-top" onerror="this.onerror=null; this.src='/static/images/no-image.jpg'" alt="">
     <div class="card-body">
       <h5 class="card-title">{{article['title']}}</h5>
       <p class="card-text">{{article['description']}} {{article["content"]}}</p>
       <p class="card-text">Source : <a href="{{article['url']}}">{{article["source"]["name"]}}</a></p>
-      <p class="card-text"><small class="text-muted">Posted : {{article["publishedAt"]}}</small></p>
+      <p class="card-tex time"><small class="text-muted">{{article["publishedAt"]}}</small></p>
     </div>
   </div>
   {% endfor %}

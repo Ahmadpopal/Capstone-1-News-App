@@ -11,15 +11,15 @@ BASE_URL = "https://newsapi.org/v2/"
 
 # GENERAL HEADLINES ENDPOINT
 headlines_response = requests.get(
-    f"{BASE_URL}top-headlines", params={"category": "general", "apiKey": key, "pageSize": 50})
+    f"{BASE_URL}top-headlines", params={"category": "general", "country": "us", "apiKey": key, "pageSize": 50})
 
 HEADLINES = headlines_response.json()
 
 
-# GENERAL TECH CRANCH
+# GENERAL TECH CRUNCH
 
 TECH_CRUNCH_NEWS_response = requests.get(f"{BASE_URL}everything", params={
-    "apiKey": key, "domains": "techcrunch.com,thenextweb.com"})
+    "apiKey": key, "domains": "techcrunch.com,thenextweb.com", "language": "en"})
 
 TECH_CRUNCH_data = TECH_CRUNCH_NEWS_response.json()
 
@@ -51,7 +51,6 @@ def search_news(query):
 
 
 # FUNCTION TO GET NEWS BY CATEGORY
-
 def get_news_by_category(country, cat):
     response = requests.get(f"{BASE_URL}top-headlines", params={"apiKey": key,
                                                                 "country": country, "category": cat})

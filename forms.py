@@ -3,8 +3,8 @@ from wtforms import StringField, PasswordField
 from wtforms.validators import InputRequired, Email, Length
 
 
+# WTF FORMS TO REGISTER USERS
 class UserSignForm(FlaskForm):
-
     firstname = StringField("First Name", validators=[InputRequired()])
     lastname = StringField("Last Name", validators=[InputRequired()])
     dateofbirth = StringField("Data Of Birth", validators=[InputRequired()])
@@ -13,6 +13,7 @@ class UserSignForm(FlaskForm):
     password = PasswordField("Password", validators=[Length(min=8)])
 
 
+# WTF FORMS TO Authenticate USERS
 class UserLogInForm(FlaskForm):
 
     username = StringField("Username", validators=[InputRequired()])

@@ -18,6 +18,8 @@ app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 connect_db(app)
 toolbar = DebugToolbarExtension(app)
 
+# ROUTES TO REGISTER & AUTHENCTICATE USERS
+
 
 # Sign Up route
 @app.route("/register", methods=["GET", "POST"])
@@ -78,7 +80,8 @@ def user_logout():
     session.pop("username")
     return redirect("/")
 
-# Routes to News
+
+# Routes to News Pages
     ######################################################
 
 

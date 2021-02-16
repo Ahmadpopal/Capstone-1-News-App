@@ -11,17 +11,17 @@
 {% block content %}
 <!-- -------- web body Here --------- -->
 <div class="container my-container">
-<h1>Global Headlines </h1>
+<h1>Headlines </h1>
 <hr class="w-75">
 <div class="row m-auto">
 {% for article in data['articles']%}
 <div class="col-md-5 m-4">
     <h4>{{article['title']}}</h4>
-    <img src="{{article['urlToImage']}}" class="img-fluid m-auto" alt="">
+    <img src="{{article['urlToImage']}}" class="img-fluid m-auto" onerror="this.onerror=null; this.src='/static/images/no-image.jpg'" alt="">
     <p>{{article['description']}}</p> 
     <p>{{article["content"]}}</p>
     <p>Source : <a href="{{article['url']}}">{{article["source"]["name"]}}</a></p>
-    <p>Posted : {{article["publishedAt"]}}</p>
+    <p class="time">{{article["publishedAt"]}}</p>
     <hr>
 </div>
 {% endfor %}

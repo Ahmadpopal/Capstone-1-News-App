@@ -1,20 +1,130 @@
-/* BASE */
+/* BASE PAGE STYLES */
 .my-flash-div {
   position: relative;
   top: 30px;
 }
 
-.my-container {
-  border: 1px solid black;
-  position: relative;
-  top: 50px;
+/* BASE PAGE / FOOTER SECTION */
+.footer {
+  padding: 0px;
+  background-color: black;
 }
 
-/* Region  */
+.footer-h4 {
+  color: white;
+}
+
+.footer-hr {
+  color: white;
+}
+.region-li {
+  color: white;
+}
+
+.footer-p {
+  color: white;
+}
+
+/* HOME PAGE STYLES */
+
+.my-container {
+  position: relative;
+  top: 10px;
+  margin: 50px;
+  background-color: rgb(243, 237, 237);
+}
+
+.my-container {
+  position: relative;
+  top: 10px;
+  margin: 50px;
+  background-color: rgb(243, 237, 237);
+}
+.title {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+.see-all {
+  display: inline-block;
+  position: relative;
+  top: 10px;
+}
+
+.line {
+  display: inline-block;
+  border: 1px solid black;
+  width: 850px;
+  position: relative;
+  top: 30px;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+/* HOME PAGE / HEADLINES  NEWS SECTION */
+.my-left-headlines-div {
+  margin: 0px;
+  padding: 0px;
+  height: 350px;
+  border-right: 1px solid rgb(199, 195, 195);
+}
+
+.my-left-headlines-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-right-headlines-div-content {
+  height: 200px;
+}
+
+.my-headline-bottom-col {
+  height: 350px;
+}
+
+.my-headline-bottom-col-img-div {
+  height: 200px;
+}
+
+.my-headline-bottom-col-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-headline-bottom-col-content-div {
+  height: 120px;
+}
+
+/* HOME PAGE / TECH NEWS SECTION  */
+.my-tech-news-col {
+  height: 500px;
+}
+
+/* REGION PAGE  */
+.Region-container {
+  margin-top: 60px;
+  top: 0%;
+}
+
+/* REGION PAGE / CATEGORY NAVBAR SECTION */
 .category {
+  background-color: red;
+  color: white;
+  text-align: center;
   margin-top: 60px;
   position: sticky;
   top: 60px;
   z-index: 3;
-  background-color: white;
+}
+
+.category-attributes {
+  color: white;
+}
+
+.category-text {
+  font-size: 15px;
 }
