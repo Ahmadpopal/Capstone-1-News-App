@@ -42,6 +42,17 @@
     In the Search bar users can type any refference to the article of their choice and they will
     be provided with the articles regarding their pass in input from different sources. users can
     access the Headlines, Tech News and Region News after register/authenticate themselves. 
+    
+  # Features  
+   - SQL Data base is used for this web application, where users can regiester, login and updated 
+    their profile later if they want to. 
+
+   I choose to focus on using a little bit of everything for this full stack project Database, 
+      API, routing, testing designing etc... 
+
+   Looking forward I would love to revisit news app project and add featuers, such as user 
+    favorites where users can save their favorite articles in the database and can revisit them latter, 
+   sharing where users can share the pet details with families and freinds before they adopt them. 
       
 
 # Links to the APIs used for this Project. 
