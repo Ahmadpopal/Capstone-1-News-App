@@ -1,7 +1,4 @@
-# News-Application 
-     - News-Application is deployed on Heroku Server 
-  Heroku Link 
-   - https://capstone-news-application.herokuapp.com/
+
       
       
 # News-Application
@@ -18,6 +15,25 @@
   Search bar 
     - News App also have Search bar, where users can search any article of their choice. 
     
+    Heroku Server
+     - News-Application is deployed on Heroku Server 
+  Heroku Link 
+   - https://capstone-news-application.herokuapp.com/
+
+
+
+TO use/run News App
+    - Create a Project Folder in your Computer 
+    -   CLONE News App GITHUT REPOSITORY TO YOUR Project Folder 
+    - Create a virtul environment 
+         - python3 -m venv venv
+    - Activate the virtul environment in your computer 
+         - source venv/bin/activate
+    - INSTALL ALL THE DEPENDECIES from requirements.txt
+        - pip3 install -r requirements.txt
+    - run server in development mode 
+         - FLASK_ENV=development flask run 
+ 
     
  # Walk Through
     - To access the Web-App services users need to register themselves, and every time user want to access
