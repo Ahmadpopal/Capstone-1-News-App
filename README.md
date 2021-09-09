@@ -24,15 +24,15 @@
 
 TO use/run News App
     - Create a Project Folder in your Computer 
-    -   CLONE News App GITHUT REPOSITORY TO YOUR Project Folder 
+       CLONE News App GITHUT REPOSITORY TO YOUR Project Folder 
     - Create a virtul environment 
-         - python3 -m venv venv
+          python3 -m venv venv
     - Activate the virtul environment in your computer 
-         - source venv/bin/activate
+          source venv/bin/activate
     - INSTALL ALL THE DEPENDECIES from requirements.txt
-        - pip3 install -r requirements.txt
+         pip3 install -r requirements.txt
     - run server in development mode 
-         - FLASK_ENV=development flask run 
+          FLASK_ENV=development flask run 
  
     
  # Walk Through
