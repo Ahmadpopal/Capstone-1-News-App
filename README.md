@@ -22,7 +22,7 @@
 
 
 
-TO use/run News App
+# TO use/run News App
     - Create a Project Folder in your Computer 
        CLONE News App GITHUT REPOSITORY TO YOUR Project Folder 
     - Create a virtul environment 
