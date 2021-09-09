@@ -20,7 +20,10 @@
     
     
  # Walk Through
-    - To access the Web-App services users need to register themselves, and every time user want to access the website he/she needs to authenticate themselves with the required cridentials. In the Search bar users can type any refference to the article of their choice and they will be provided with the articles regarding their pass in input from different sources. users can access the Headlines, Tech News and Region News after register/authenticate themselves. 
+    - To access the Web-App services users need to register themselves, and every time user want to access the website 
+    he/she needs to authenticate themselves with the required cridentials. In the Search bar users can type any refference 
+    to the article of their choice and they will be provided with the articles regarding their pass in input from different 
+    sources. users can access the Headlines, Tech News and Region News after register/authenticate themselves. 
       
 
 # Links to the APIs used for this Project. 
